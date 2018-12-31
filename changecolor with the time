@@ -1,11 +1,8 @@
    Date date = new Date();
-    System.out.println("Date: " + date);
     DateFormat df = new SimpleDateFormat("k");
     String hour = df.format(date);
-    System.out.println(" " + hour+ " heures");
     String hourString = new SimpleDateFormat("k").format(date);
     int hours = Integer.parseInt(hourString);
-    System.out.println(" " + hours+ " heures"); 
    
   if (hours >= 22 || hours < 6) { 
        jPanel1.setBackground(Color.black);
